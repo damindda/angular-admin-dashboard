@@ -1,4 +1,3 @@
-import { StrictMode } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
 /**
@@ -64,11 +63,7 @@ const App = () => {
     }
   ]);
 
-  return (
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
