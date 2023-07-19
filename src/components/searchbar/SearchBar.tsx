@@ -5,16 +5,22 @@ import { CiSearch } from 'react-icons/ci';
 
 const SearchBar = () => {
   const data: any[] = [
-    'Paris',
-    'London',
-    'New York',
-    'Tokyo',
-    'Berlin',
-    'Buenos Aires',
-    'Cairo',
-    'Canberra',
-    'Rio de Janeiro',
-    'Dublin'
+    {
+      id: 1,
+      name: 'Paris'
+    },
+    {
+      id: 2,
+      name: 'London'
+    },
+    {
+      id: 3,
+      name: 'Tokyo'
+    },
+    {
+      id: 4,
+      name: 'Berlin'
+    }
   ];
 
   const filterData = (query: any, data: any) => {
@@ -62,7 +68,7 @@ const SearchBar = () => {
               borderWidth: '10px'
             }}
             key={d.id}>
-            {d}
+            {d.name}
           </div>
         ))}
       </div>

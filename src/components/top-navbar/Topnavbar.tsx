@@ -17,13 +17,19 @@ const TopNavbar = () => {
       <div className="top-nav-items flex">
         <ul className="flex">
           <li>
-            <Link to="/">home</Link>
+            <Link to="/" className="text-white">
+              home
+            </Link>
           </li>
           <li>
-            <Link to="/users">users</Link>
+            <Link to="/users" className="text-white">
+              users
+            </Link>
           </li>
           <li>
-            <Link to="/products">products</Link>
+            <Link to="/products" className="text-white">
+              products
+            </Link>
           </li>
           <li>
             <div className="notifications flex align-center text-white">
