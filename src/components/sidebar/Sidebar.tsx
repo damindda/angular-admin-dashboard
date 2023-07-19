@@ -1,3 +1,5 @@
+import './sidebar.scss';
+
 const Sidebar = () => {
   return (
     <ul className="flex-column sidebar">
