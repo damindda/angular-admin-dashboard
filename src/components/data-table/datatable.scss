@@ -1,0 +1,7 @@
+@use '../../styles/variables' as variables;
+.data-table {
+  padding: 20px;
+  .MuiDataGrid-toolbarContainer {
+    flex-direction: row-reverse;
+  }
+}
