@@ -1,0 +1,30 @@
+@use './variables' as variables;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0;
+  display: flex;
+  background-color: variables.$dark-bg;
+}
+
+.sidebar-container {
+  width: 25%;
+  padding: 20px;
+  border-right: 2px solid variables.$primary-accent;
+}
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+  border-right: 2px solid variables.$soft-color;
+}
+
+.flex {
+  display: flex;
+}
