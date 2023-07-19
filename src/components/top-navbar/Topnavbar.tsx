@@ -1,6 +1,9 @@
+import './topnavbar.scss';
+
 const TopNavbar = () => {
   return (
-    <div className="navbar">
+    <div className="top-navbar flex">
+      <div className="logo flex">LOGO</div>
       <ul className="flex">
         <li>search</li>
         <li>dashboard</li>

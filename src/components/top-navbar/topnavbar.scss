@@ -1,3 +1,14 @@
-.navbar {
-  background-color: black;
+@use '../../styles/variables' as variables;
+.top-navbar {
+  background-color: variables.$main-bg;
+  padding: 12px;
+  .logo {
+    color: variables.$white;
+  }
+  ul {
+    li {
+      padding: 2px 16px;
+      color: variables.$white;
+    }
+  }
 }

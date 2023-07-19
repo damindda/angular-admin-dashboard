@@ -1,12 +1,10 @@
 const Sidebar = () => {
   return (
-    <div className="navbar">
-      <ul className="flex">
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-      </ul>
-    </div>
+    <ul className="flex-column sidebar">
+      <li>Home</li>
+      <li>Home</li>
+      <li>Home</li>
+    </ul>
   );
 };
 

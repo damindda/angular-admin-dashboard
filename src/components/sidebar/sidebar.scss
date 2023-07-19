@@ -1,3 +1,9 @@
+@use '../../styles/variables' as variables;
 .sidebar {
-  background-color: black;
+  background-color: variables.$main-bg;
+  padding: 12px;
+  li {
+    padding: 2px 16px;
+    color: variables.$white;
+  }
 }

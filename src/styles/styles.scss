@@ -28,3 +28,13 @@ body {
 .flex {
   display: flex;
 }
+
+.flex-column {
+  flex-direction: column;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}

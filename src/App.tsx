@@ -23,11 +23,13 @@ const App = () => {
     return (
       <div className="main-layout">
         <TopNavbar />
-        <div className="side-bar">
-          <Sidebar />
-        </div>
-        <div className="content-container">
-          <Outlet />
+        <div className="flex">
+          <div className="sidebar-container">
+            <Sidebar />
+          </div>
+          <div className="content-container">
+            <Outlet />
+          </div>
         </div>
         <Footer />
       </div>
