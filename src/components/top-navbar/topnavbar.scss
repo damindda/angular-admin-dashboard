@@ -2,8 +2,11 @@
 .top-navbar {
   background-color: variables.$main-bg;
   padding: 12px;
+  .logo-container {
+    width: 20%;
+  }
   .logo {
-    color: variables.$white;
+    width: 40px;
   }
   ul {
     li {
