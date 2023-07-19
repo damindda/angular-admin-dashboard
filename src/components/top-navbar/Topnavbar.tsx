@@ -1,3 +1,8 @@
+import { IconContext } from 'react-icons';
+import { TfiBell } from 'react-icons/tfi';
+import UserProfile from '../avatar/Avatar';
+import { Link } from 'react-router-dom';
+import SearchBar from '../searchbar/SearchBar';
 import './topnavbar.scss';
 
 const TopNavbar = () => {
@@ -6,14 +11,33 @@ const TopNavbar = () => {
       <div className="logo-container flex align-center ">
         <img src="/public/favicon.svg" className="logo" /> <label className="px-10 text-white">HR Dashboard</label>
       </div>
+      <div className="search-bar">
+        <SearchBar />
+      </div>
       <div className="top-nav-items flex">
         <ul className="flex">
-          <li>search</li>
-          <li>dashboard</li>
-          <li>notifications</li>
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to="/users">users</Link>
+          </li>
+          <li>
+            <Link to="/products">products</Link>
+          </li>
+          <li>
+            <div className="notifications flex align-center text-white">
+              <IconContext.Provider value={{ color: 'white', size: '20px' }}>
+                <div>
+                  <TfiBell />
+                </div>
+              </IconContext.Provider>
+            </div>
+          </li>
         </ul>
         <div className="user-settings flex align-center text-white">
-          <label>David Walker</label>
+          <UserProfile />
+          <label className="px-10">David Walker</label>
         </div>
       </div>
     </div>
