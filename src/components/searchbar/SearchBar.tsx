@@ -2,60 +2,57 @@ import { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import { CiSearch } from 'react-icons/ci';
+import styled from 'styled-components';
+import { SearchResults } from '../top-navbar/SearchResults';
 
-const SearchBar = () => {
-  const data: any[] = [
-    {
-      id: 1,
-      name: 'Paris'
-    },
-    {
-      id: 2,
-      name: 'London'
-    },
-    {
-      id: 3,
-      name: 'Tokyo'
-    },
-    {
-      id: 4,
-      name: 'Berlin'
-    }
-  ];
+type Props = {
+  placeholder?: string;
+  data: SearchResults[];
+};
 
-  const filterData = (query: any, data: any) => {
-    if (!query) {
-      return data;
-    } else {
-      return data.filter((d: any) => d.toLowerCase().includes(query));
-    }
+const TopSearchBar = styled.div`
+  color: purple;
+  margin: 5px;
+  padding: 2px;
+  background-color: #fff;
+`;
+
+const SearchBar = (props: Props) => {
+  const [keyword, setSearch] = useState('');
+  const [filteredData, setData] = useState(props.data || []);
+
+  const handleSearchInputs = () => {
+    if (!keyword) return;
+
+    const filteredValues: SearchResults[] = props.data.filter((item: SearchResults) =>
+      item.name.toLowerCase().includes(keyword)
+    );
+
+    setData(filteredValues);
   };
 
-  const [searchQuery, setSearchQuery] = useState('');
-  const dataFiltered = filterData(searchQuery, data);
-
   return (
-    <div>
+    <TopSearchBar>
       <form>
         <TextField
           id="search-bar"
           className="text"
           onInput={(e: any) => {
-            setSearchQuery(e.target.value);
+            setSearch(e.target.value);
           }}
           style={{ fill: 'white' }}
-          label="search....."
           variant="outlined"
-          placeholder="Search..."
+          placeholder={props.placeholder}
           size="small"
+          onChange={handleSearchInputs}
         />
         <IconButton type="submit" aria-label="search">
           <CiSearch style={{ fill: 'white' }} />
         </IconButton>
       </form>
 
-      <div style={{ padding: 3, display: 'none' }}>
-        {dataFiltered.map((d: any) => (
+      <div className="search-results" style={{ padding: 3 }}>
+        {filteredData.map((item: any) => (
           <div
             className="text"
             style={{
@@ -67,12 +64,12 @@ const SearchBar = () => {
               width: '250px',
               borderWidth: '10px'
             }}
-            key={d.id}>
-            {d.name}
+            key={item.id}>
+            {item.name}
           </div>
         ))}
       </div>
-    </div>
+    </TopSearchBar>
   );
 };
 
