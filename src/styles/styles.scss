@@ -22,7 +22,7 @@ body {
 .content-container {
   width: 100%;
   padding: 20px;
-  border-right: 2px solid variables.$soft-color;
+  overflow-y: hidden;
 }
 
 .flex {

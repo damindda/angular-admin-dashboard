@@ -13,10 +13,13 @@ const Sidebar = () => {
   const toggle = () => setSideBarOpen(!isSideBarOpen);
   return (
     <>
-      <motion.div animate={{ width: isSideBarOpen ? '300px' : '50px' }} className="sidebar">
+      <motion.div
+        animate={{ width: isSideBarOpen ? 300 : 50, opacity: 100 }}
+        initial={{ width: 0, opacity: 50 }}
+        className="sidebar">
         <div className="hamburger-container flex align-center">
           <AnimatePresence>{isSideBarOpen && <h5 className="text-white px-10">ADMIN DASHBOARD</h5>}</AnimatePresence>
-          <IconContext.Provider value={{ className: 'hamburger-icon flex' }}>
+          <IconContext.Provider value={{ className: 'hamburger-icon flex align-center' }}>
             <RxHamburgerMenu onClick={toggle} />
           </IconContext.Provider>
         </div>
@@ -25,7 +28,7 @@ const Sidebar = () => {
           {menu.map((item) => (
             <div key={item.id} className="align-center">
               <Link to={item.url} className="sidenav-item text-white align-center">
-                <IconContext.Provider value={{ className: 'hamburger-icon' }}>
+                <IconContext.Provider value={{ className: 'text-white' }}>
                   <item.icon />
                 </IconContext.Provider>
                 {isSideBarOpen && <label>{item.name}</label>}
