@@ -1,26 +1,44 @@
 import { DataGrid, GridRowsProp, GridColDef, GridToolbar } from '@mui/x-data-grid';
+import { AiTwotoneDelete } from 'react-icons/ai';
+import { GrView } from 'react-icons/gr';
 import './datatable.scss';
+import { Link } from 'react-router-dom';
 
-const rows: GridRowsProp = [
-  { id: 1, col1: 'Hello', col2: 'World' },
-  { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
-  { id: 3, col1: 'MUI', col2: 'is Amazing' },
-  { id: 4, col1: 'Hello', col2: 'World' },
-  { id: 5, col1: 'DataGridPro', col2: 'is Awesome' },
-  { id: 6, col1: 'MUI', col2: 'is Amazing' }
-];
+type Props = {
+  columns: GridColDef[];
+  rows: GridRowsProp;
+  slug: string;
+};
 
-const columns: GridColDef[] = [
-  { field: 'col1', headerName: 'Column 1', width: 150 },
-  { field: 'col2', headerName: 'Column 2', width: 150 }
-];
-
-const DataTable = () => {
+const handleDelete = (id: number) => {
+  console.log('iddddddd++++', id, 'has been deleted');
+};
+const DataTable = (props: Props) => {
+  const actionColumn: GridColDef = {
+    field: 'actions',
+    headerName: 'Actions',
+    width: 200,
+    renderCell: (params: any) => {
+      console.log('params >>>', params);
+      return (
+        <div className="actions flex">
+          <div className="view px-10">
+            <Link to={`/${props.slug}/${params.row.id}}`}>
+              <GrView />
+            </Link>
+          </div>
+          <div className="delete" onClick={() => handleDelete(params.row.id)}>
+            <AiTwotoneDelete />
+          </div>
+        </div>
+      );
+    }
+  };
   return (
     <DataGrid
       className="data-table"
-      rows={rows}
-      columns={columns}
+      rows={props.rows}
+      columns={[...props.columns, actionColumn]}
       initialState={{
         pagination: {
           paginationModel: {

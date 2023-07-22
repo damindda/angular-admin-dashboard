@@ -24,9 +24,7 @@ const App = () => {
       <div className="main-layout">
         <TopNavbar />
         <div className="flex">
-          <div className="sidebar-container">
-            <Sidebar />
-          </div>
+          <Sidebar />
           <div className="content-container">
             <Outlet />
           </div>

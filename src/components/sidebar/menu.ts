@@ -1,38 +1,28 @@
+import { CiAlignRight, CiBookmarkPlus, CiCalendarDate } from 'react-icons/ci';
+
 export const menu = [
   {
     id: 1,
-    title: 'main',
-    items: [
-      {
-        id: 1,
-        title: 'Home Page',
-        url: '/',
-        icons: 'home.svg'
-      },
-      {
-        id: 1,
-        title: 'Profile',
-        url: '/',
-        icons: 'home.svg'
-      }
-    ]
+    name: 'Home Page',
+    url: '/home',
+    icon: CiAlignRight
   },
   {
-    id: 1,
-    title: 'lists',
-    items: [
-      {
-        id: 1,
-        title: 'Users',
-        url: '/users',
-        icons: 'home.svg'
-      },
-      {
-        id: 1,
-        title: 'Profile',
-        url: '/',
-        icons: 'home.svg'
-      }
-    ]
+    id: 2,
+    name: 'Profile',
+    url: '/profile',
+    icon: CiBookmarkPlus
+  },
+  {
+    id: 3,
+    name: 'Users',
+    url: '/users',
+    icon: CiCalendarDate
+  },
+  {
+    id: 4,
+    name: 'products',
+    url: '/products',
+    icon: CiBookmarkPlus
   }
 ];

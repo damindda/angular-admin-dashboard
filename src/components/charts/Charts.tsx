@@ -1,6 +1,7 @@
-import { CiAlignRight, CiBookmarkPlus, CiCalendarDate } from 'react-icons/ci';
+import { CiCalendarDate } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
+import styled from 'styled-components';
 import './charts.scss';
 
 type Props = {
@@ -13,13 +14,18 @@ type Props = {
   chartdata: [];
 };
 
-const Charts = (props: any) => {
-  console.log('props >>>', props);
+const CalendarDate = styled(CiCalendarDate)`
+  color: purple;
+  transform: scale(2);
+  margin: 5px;
+`;
+
+const Charts = (props: Props) => {
   return (
     <div className="chart-container flex">
       <div className="user-info">
         <div className="title">
-          <CiCalendarDate />
+          <CalendarDate />
           <label className="title">{props.title}</label>
           <h2>{props.number}</h2>
           <Link to="/" style={{ color: props.color }}>
