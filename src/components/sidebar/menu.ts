@@ -21,7 +21,7 @@ export const menu = [
   },
   {
     id: 4,
-    name: 'products',
+    name: 'Products',
     url: '/products',
     icon: CiBookmarkPlus
   }
