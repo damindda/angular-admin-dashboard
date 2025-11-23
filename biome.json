@@ -7,7 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-    "includes": ["**", "!./node_modules"]
+		"includes": ["**", "!./node_modules"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -17,14 +17,15 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-      "suspicious": {
-        "useBiomeIgnoreFolder": "error"
-      }
+			"suspicious": {
+				"useBiomeIgnoreFolder": "error"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "double",
+			"lineWidth": 120
 		}
 	},
 	"assist": {
