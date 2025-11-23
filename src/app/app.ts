@@ -1,12 +1,13 @@
-import { Component, signal } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Comments } from './components/comments';
 
 @Component({
-	selector: "app-root",
-	imports: [RouterOutlet],
-	templateUrl: "./app.html",
-	styleUrl: "./app.css",
+  imports: [RouterOutlet, Comments],
+  selector: 'app-root',
+  templateUrl: './app.html',
+  styleUrl: './app.css',
 })
 export class App {
-	protected readonly title = signal("angular-admin-dashboard");
+  protected readonly title = signal('angular-admin-dashboard');
 }
