@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { Avatar } from './avatar';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { Avatar } from "./avatar";
 
 @Component({
-  selector: 'nav',
-  template: `
+	selector: "nav",
+	template: `
     <div class="flex space-x-2 p-2">
       <a routerLink="/">Home</a>
       |
@@ -15,6 +15,6 @@ import { Avatar } from './avatar';
       </a>
     </div>
   `,
-  imports: [Avatar, RouterLink],
+	imports: [Avatar, RouterLink],
 })
 export class Nav {}
