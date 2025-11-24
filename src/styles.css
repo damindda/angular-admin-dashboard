@@ -183,6 +183,9 @@
   .menu-item {
     @apply relative flex items-center gap-3 px-3 py-2 font-medium rounded-lg text-theme-sm;
   }
+  .menu-item:hover {
+    @apply bg-black/10 text-black;
+  }
   .menu-item-active {
     @apply bg-brand-500/20 text-brand-800;
   }
