@@ -158,7 +158,7 @@
               </svg>
 
               <span class="menu-item-text" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
-                Calendar
+                Customer Management
               </span>
             </a>
           </li>
@@ -187,7 +187,7 @@
               </svg>
 
               <span class="menu-item-text" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
-                User Profile
+                All Tickets
               </span>
             </a>
           </li>
@@ -222,53 +222,9 @@
               </svg>
 
               <span class="menu-item-text" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
-                Tables
+                Support System
               </span>
-
-              <svg
-                class="menu-item-arrow absolute right-2.5 top-1/2 -translate-y-1/2 stroke-current"
-                [ngClass]="[
-                  page() === 'Tables' ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive',
-                  sidebarToggle() ? 'lg:hidden' : ''
-                ]"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.79175 7.39584L10.0001 12.6042L15.2084 7.39585"
-                  stroke=""
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
             </a>
-            <div
-              class="overflow-hidden transform translate"
-              [ngClass]="page() === 'Tables' ? 'block' : 'hidden'"
-            >
-              <ul
-                [ngClass]="sidebarToggle() ? 'lg:hidden' : 'flex'"
-                class="flex flex-col gap-1 mt-2 menu-dropdown pl-9"
-              >
-                <li>
-                  <a
-                    routerLink="basic-tables.html"
-                    class="menu-dropdown-item group"
-                    [ngClass]="
-                      page() === 'basicTables'
-                        ? 'menu-dropdown-item-active'
-                        : 'menu-dropdown-item-inactive'
-                    "
-                  >
-                    Basic Tables
-                  </a>
-                </li>
-              </ul>
-            </div>
           </li>
           <li>
             <a
@@ -319,66 +275,9 @@
               </svg>
 
               <span class="menu-item-text" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
-                Pages
+                Reports
               </span>
-
-              <svg
-                class="menu-item-arrow absolute right-2.5 top-1/2 -translate-y-1/2 stroke-current"
-                [ngClass]="[
-                  page() === 'Pages' ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive',
-                  sidebarToggle() ? 'lg:hidden' : ''
-                ]"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.79175 7.39584L10.0001 12.6042L15.2084 7.39585"
-                  stroke=""
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
             </a>
-            <div
-              class="overflow-hidden transform translate"
-              [ngClass]="page() === 'Pages' ? 'block' : 'hidden'"
-            >
-              <ul
-                [ngClass]="sidebarToggle() ? 'lg:hidden' : 'flex'"
-                class="flex flex-col gap-1 mt-2 menu-dropdown pl-9"
-              >
-                <li>
-                  <a
-                    routerLink="blank.html"
-                    class="menu-dropdown-item group"
-                    [ngClass]="
-                      page() === 'blank'
-                        ? 'menu-dropdown-item-active'
-                        : 'menu-dropdown-item-inactive'
-                    "
-                  >
-                    Blank Page
-                  </a>
-                </li>
-                <li>
-                  <a
-                    routerLink="404.html"
-                    class="menu-dropdown-item group"
-                    [ngClass]="
-                      page() === 'page404'
-                        ? 'menu-dropdown-item-active'
-                        : 'menu-dropdown-item-inactive'
-                    "
-                  >
-                    404 Error
-                  </a>
-                </li>
-              </ul>
-            </div>
           </li>
         </ul>
       </div>
