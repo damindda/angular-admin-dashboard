@@ -2,12 +2,11 @@
   [ngClass]="sidebarToggle() ? 'translate-x-0 lg:w-[90px]' : '-translate-x-full lg:w-[260px]'"
   class="sidebar fixed left-0 top-0 z-9999 flex h-screen w-[290px] flex-col overflow-y-hidden border-r border-gray-200 bg-white px-5 lg:static lg:translate-x-0"
 >
-  <!-- SIDEBAR HEADER -->
   <div
     [ngClass]="sidebarToggle() ? 'justify-center' : 'justify-between'"
     class="flex items-center gap-2 pt-8 sidebar-header pb-7"
   >
-    <a href="index.html">
+    <a routerLink="index.html">
       <span class="logo" [ngClass]="sidebarToggle() ? 'hidden' : ''">
         <img class="dark:hidden" src="images/logo.svg" alt="Logo" />
       </span>
@@ -20,13 +19,10 @@
       />
     </a>
   </div>
-  <!-- SIDEBAR HEADER -->
   <div class="flex flex-col overflow-y-auto duration-300 ease-linear no-scrollbar">
-    <!-- SIDEBAR MENU -->
     <nav>
-      <!-- SIDEBAR GROUP -->
       <div>
-        <h3 class="mb-4 text-xs uppercase leading-[20px] text-gray-400">
+        <h3 class="mb-4 text-xs uppercase leading-5 text-gray-400">
           <span class="menu-group-title" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
             MENU
           </span>
@@ -48,10 +44,9 @@
         </h3>
 
         <ul class="flex flex-col gap-4 mb-6">
-          <!-- MENU ITEM DASHBOARD -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'Dashboard' ||
@@ -114,8 +109,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'Dashboard' ? 'block' : 'hidden'"
@@ -126,7 +119,7 @@
               >
                 <li>
                   <a
-                    href="index.html"
+                    routerLink="index.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'ecommerce'
@@ -139,14 +132,10 @@
                 </li>
               </ul>
             </div>
-            <!-- Dropdown Menu End -->
           </li>
-          <!-- Menu Item Dashboard -->
-
-          <!-- Menu Item Calendar -->
           <li>
             <a
-              href="calendar.html"
+              routerLink="calendar.html"
               class="menu-item group"
               [ngClass]="page() === 'calendar' ? 'menu-item-active' : 'menu-item-inactive'"
             >
@@ -173,12 +162,9 @@
               </span>
             </a>
           </li>
-          <!-- Menu Item Calendar -->
-
-          <!-- Menu Item Profile -->
           <li>
             <a
-              href="profile.html"
+              routerLink="profile.html"
               class="menu-item group"
               [ngClass]="page() === 'profile' ? 'menu-item-active' : 'menu-item-inactive'"
             >
@@ -205,12 +191,9 @@
               </span>
             </a>
           </li>
-          <!-- Menu Item Profile -->
-
-          <!-- Menu Item Tables -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'basicTables' || page() === 'dataTables'
@@ -263,8 +246,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'Tables' ? 'block' : 'hidden'"
@@ -275,7 +256,7 @@
               >
                 <li>
                   <a
-                    href="basic-tables.html"
+                    routerLink="basic-tables.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'basicTables'
@@ -288,14 +269,10 @@
                 </li>
               </ul>
             </div>
-            <!-- Dropdown Menu End -->
           </li>
-          <!-- Menu Item Tables -->
-
-          <!-- Menu Item Pages -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'fileManager' ||
@@ -366,8 +343,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'Pages' ? 'block' : 'hidden'"
@@ -378,7 +353,7 @@
               >
                 <li>
                   <a
-                    href="blank.html"
+                    routerLink="blank.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'blank'
@@ -391,7 +366,7 @@
                 </li>
                 <li>
                   <a
-                    href="404.html"
+                    routerLink="404.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'page404'
@@ -404,15 +379,11 @@
                 </li>
               </ul>
             </div>
-            <!-- Dropdown Menu End -->
           </li>
-          <!-- Menu Item Pages -->
         </ul>
       </div>
-
-      <!-- Others Group -->
       <div>
-        <h3 class="mb-4 text-xs uppercase leading-[20px] text-gray-400">
+        <h3 class="mb-4 text-xs uppercase leading-5 text-gray-400">
           <span class="menu-group-title" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
             others
           </span>
@@ -436,10 +407,9 @@
         </h3>
 
         <ul class="flex flex-col gap-4 mb-6">
-          <!-- Menu Item Charts -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'Charts' ||
@@ -498,8 +468,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'Charts' ? 'block' : 'hidden'"
@@ -510,7 +478,7 @@
               >
                 <li>
                   <a
-                    href="line-chart.html"
+                    routerLink="line-chart.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'lineChart'
@@ -523,7 +491,7 @@
                 </li>
                 <li>
                   <a
-                    href="bar-chart.html"
+                    routerLink="bar-chart.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'barChart'
@@ -543,7 +511,7 @@
           <!-- Menu Item Ui Elements -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'UIElements' ||
@@ -626,8 +594,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'UIElements' ? 'block' : 'hidden'"
@@ -638,7 +604,7 @@
               >
                 <li>
                   <a
-                    href="alerts.html"
+                    routerLink="alerts.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'alerts'
@@ -651,7 +617,7 @@
                 </li>
                 <li>
                   <a
-                    href="avatars.html"
+                    routerLink="avatars.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'avatars'
@@ -664,7 +630,7 @@
                 </li>
                 <li>
                   <a
-                    href="badge.html"
+                    routerLink="badge.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'badge'
@@ -677,7 +643,7 @@
                 </li>
                 <li>
                   <a
-                    href="buttons.html"
+                    routerLink="buttons.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'buttons'
@@ -690,7 +656,7 @@
                 </li>
                 <li>
                   <a
-                    href="images.html"
+                    routerLink="images.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'images'
@@ -703,7 +669,7 @@
                 </li>
                 <li>
                   <a
-                    href="videos.html"
+                    routerLink="videos.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'videos'
@@ -716,14 +682,10 @@
                 </li>
               </ul>
             </div>
-            <!-- Dropdown Menu End -->
           </li>
-          <!-- Menu Item Ui Elements -->
-
-          <!-- Menu Item Authentication -->
           <li>
             <a
-              href="#"
+              routerLink="#"
               class="menu-item group"
               [ngClass]="
                 page() === 'Authentication' || page() === 'basicChart' || page() === 'advancedChart'
@@ -780,8 +742,6 @@
                 />
               </svg>
             </a>
-
-            <!-- Dropdown Menu Start -->
             <div
               class="overflow-hidden transform translate"
               [ngClass]="page() === 'Authentication' ? 'block' : 'hidden'"
@@ -792,7 +752,7 @@
               >
                 <li>
                   <a
-                    href="signin.html"
+                    routerLink="signin.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'signin'
@@ -805,7 +765,7 @@
                 </li>
                 <li>
                   <a
-                    href="signup.html"
+                    routerLink="signup.html"
                     class="menu-dropdown-item group"
                     [ngClass]="
                       page() === 'signup'
@@ -818,32 +778,34 @@
                 </li>
               </ul>
             </div>
-            <!-- Dropdown Menu End -->
           </li>
-          <!-- Menu Item Authentication -->
         </ul>
       </div>
     </nav>
-    <!-- Sidebar Menu -->
-
-    <!-- Promo Box -->
     <div
       [ngClass]="sidebarToggle() ? 'lg:hidden' : ''"
-      class="mx-auto mb-10 w-full max-w-60 rounded-2xl bg-gray-50 px-4 py-5 text-center dark:bg-white/[0.03]"
+      class="mx-auto mb-10 w-full max-w-60 rounded-2xl bg-gray-50 px-4 py-5 text-cente"
     >
-      <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">#1 Tailwind CSS Dashboard</h3>
-      <p class="mb-4 text-gray-500 text-theme-sm dark:text-gray-400">
-        Leading Tailwind CSS Admin Template with 400+ UI Component and Pages.
+      <h1 class="mb-4 font-bold text-heading text-center">
+        <p
+          class="text-transparent bg-clip-text bg-linear-to-r to-emerald-600 from-sky-400 text-2xl md:text-3xl lg:text-4xl"
+        >
+          Angular
+        </p>
+        <p class="uppercase">Admin Dashboard</p>
+      </h1>
+
+      <p class="mb-4 text-gray-500 text-theme-sm dark:text-gray-400 text-center">
+        Totally Free Angular Admin Template with Material UI Component and Pages.
       </p>
-      <a
-        href="https://tailadmin.com/pricing"
-        target="_blank"
-        rel="nofollow"
-        class="flex items-center justify-center p-3 font-medium text-white rounded-lg bg-brand-500 text-theme-sm hover:bg-brand-600"
-      >
-        Purchase Plan
-      </a>
+      <div class="flex items-center justify-center">
+        <button
+          type="button"
+          class="text-white bg-linear-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-linear-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-base text-sm py-4 px-10 text-center leading-5 rounded-4xl"
+        >
+          Download Free
+        </button>
+      </div>
     </div>
-    <!-- Promo Box -->
   </div>
 </div>
