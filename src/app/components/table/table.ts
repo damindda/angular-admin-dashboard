@@ -13,7 +13,7 @@ export interface PeriodicElement {
 const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 1,
-    name: 'Hydrogen',
+    name: 'Printer not working',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Andy white',
@@ -21,7 +21,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 2,
-    name: 'Helium',
+    name: 'Unable to login to my email',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Ella Lockwood',
@@ -29,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 3,
-    name: 'Lithium',
+    name: 'Need a hand with onboarding',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Brian Paul',
@@ -37,7 +37,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 4,
-    name: 'Beryllium',
+    name: 'Error in my office package',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Sarah Carl',
@@ -45,7 +45,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 5,
-    name: 'Boron',
+    name: 'I can not login',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Sallajah Perumal',
@@ -53,7 +53,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 6,
-    name: 'Carbon',
+    name: 'How to I get access to my files',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Brian Bell',
@@ -61,7 +61,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 7,
-    name: 'Nitrogen',
+    name: 'I need 2FA setup',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Mandy Clark',
@@ -69,7 +69,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 8,
-    name: 'Oxygen',
+    name: 'Password change request',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Chandan Ghosh',
@@ -77,7 +77,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 9,
-    name: 'Fluorine',
+    name: 'Mac Book not loading',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Eid Zohura',
@@ -85,7 +85,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     position: 10,
-    name: 'Neon',
+    name: 'Issue with my github access',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Mira Carrie',
