@@ -6,8 +6,8 @@ export interface PeriodicElement {
   position: number;
   empId: string;
   invoiceId: string;
-  weight: number;
-  symbol: string;
+  assignedTo: string;
+  status: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -16,80 +16,80 @@ const ELEMENT_DATA: PeriodicElement[] = [
     name: 'Hydrogen',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 1.0079,
-    symbol: 'H',
+    assignedTo: 'Andy white',
+    status: 'In Progress',
   },
   {
     position: 2,
     name: 'Helium',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 4.0026,
-    symbol: 'He',
+    assignedTo: 'Ella Lockwood',
+    status: 'On Hold',
   },
   {
     position: 3,
     name: 'Lithium',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 6.941,
-    symbol: 'Li',
+    assignedTo: 'Brian Paul',
+    status: 'In Progress',
   },
   {
     position: 4,
     name: 'Beryllium',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 9.0122,
-    symbol: 'Be',
+    assignedTo: 'Sarah Carl',
+    status: 'In Progress',
   },
   {
     position: 5,
     name: 'Boron',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 10.811,
-    symbol: 'B',
+    assignedTo: 'Sallajah Perumal',
+    status: 'In Progress',
   },
   {
     position: 6,
     name: 'Carbon',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 12.0107,
-    symbol: 'C',
+    assignedTo: 'Brian Bell',
+    status: 'New',
   },
   {
     position: 7,
     name: 'Nitrogen',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 14.0067,
-    symbol: 'N',
+    assignedTo: 'Mandy Clark',
+    status: 'New',
   },
   {
     position: 8,
     name: 'Oxygen',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 15.9994,
-    symbol: 'O',
+    assignedTo: 'Chandan Ghosh',
+    status: 'New',
   },
   {
     position: 9,
     name: 'Fluorine',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 18.9984,
-    symbol: 'F',
+    assignedTo: 'Eid Zohura',
+    status: 'New',
   },
   {
     position: 10,
     name: 'Neon',
     empId: '234-FDE-923',
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
-    weight: 20.1797,
-    symbol: 'Ne',
+    assignedTo: 'Mira Carrie',
+    status: 'New',
   },
 ];
 

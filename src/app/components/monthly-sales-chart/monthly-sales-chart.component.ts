@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'bee-monthly-sales-chart',
-  standalone: true,
   imports: [],
   templateUrl: './monthly-sales-chart.component.html',
 })
