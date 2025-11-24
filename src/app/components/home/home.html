@@ -1,6 +1,20 @@
 <bee-title [headerText]="'Dashboard'"></bee-title>
-<div class="pt-8">
-  <bee-metrics-charts></bee-metrics-charts>
+<div class="grid grid-cols-12 gap-4 md:gap-6">
+  <div class="col-span-12 xl:col-span-3 pt-8">
+    <bee-welcome-banner></bee-welcome-banner>
+  </div>
+  <div class="col-span-12 space-y-6 xl:col-span-6 pt-8">
+    <bee-metrics-charts></bee-metrics-charts>
+    <div class="pt-8">
+      <bee-monthly-sales-chart></bee-monthly-sales-chart>
+    </div>
+  </div>
+  <div class="col-span-12 xl:col-span-3 pt-8">
+    <div class="grid grid-cols-2 gap-4">
+      <bee-monthly-sales-chart></bee-monthly-sales-chart>
+      <bee-monthly-sales-chart></bee-monthly-sales-chart>
+    </div>
+  </div>
 </div>
 <div class="pt-8">
   <bee-table></bee-table>
