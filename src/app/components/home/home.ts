@@ -4,9 +4,17 @@ import { DashboardTable } from '../table/table';
 import { Title } from '../title';
 import { WelcomeBanner } from '../welcome-banner/welcome-banner';
 import { CurrentUtilization } from '../current-utilization/current-utilization';
+import { TemplateMessage } from '../template-message/template-message';
 @Component({
   selector: 'bee-home',
-  imports: [MetricsCharts, DashboardTable, Title, WelcomeBanner, CurrentUtilization],
+  imports: [
+    MetricsCharts,
+    DashboardTable,
+    Title,
+    WelcomeBanner,
+    CurrentUtilization,
+    TemplateMessage,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: 'home.html',
 })
