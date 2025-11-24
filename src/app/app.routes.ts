@@ -1,16 +1,35 @@
 import type { Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { Users } from './components/users';
+import { DashboardPage } from './pages/dashboard/dashboard';
+import { PageNotFound } from './components/page-not-found/not-found.component';
 
 export const routes: Routes = [
   {
     path: '',
-    title: 'Home Page',
-    component: Home,
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
   },
   {
-    path: 'users',
-    title: 'User Page',
-    component: Users,
+    path: 'dashboard',
+    title: 'Dashboard Page',
+    component: DashboardPage,
+    children: [
+      {
+        path: '',
+        component: Home,
+        title: 'Main Dashboard',
+      },
+      {
+        path: 'users',
+        title: 'User Page',
+        component: Users,
+      },
+    ],
+  },
+  {
+    path: '**',
+    component: PageNotFound,
+    title: 'Page Not Found',
   },
 ];
