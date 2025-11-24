@@ -7,9 +7,7 @@ import { NgClass } from '@angular/common';
   imports: [NgClass],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div
-      class="flex items-top justify-between rounded border border-gray-200 bg-white p-5 dark:border-gray-800 md:p-6"
-    >
+    <div class="flex items-top justify-between rounded border border-black/20 bg-white p-5">
       <div class="flex flex-col items-start">
         <span
           [ngClass]="values().type === 'UP' ? 'bg-success-50' : 'bg-error-50'"
