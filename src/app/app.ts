@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   imports: [RouterOutlet],
-  selector: 'app-root',
+  selector: 'bee-root',
   templateUrl: './app.html',
 })
 export class App {

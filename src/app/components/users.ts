@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-	selector: "users",
-	template: ` <div>Username: {{ username }}</div> `,
+  selector: 'bee-users',
+  template: ` <div>Username: {{ username }}</div> `,
 })
 export class Users {
-	username = "youngTech";
+  username = 'youngTech';
 }

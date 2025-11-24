@@ -7,6 +7,6 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   templateUrl: 'left-nav.html',
 })
 export class LeftNav {
-  sidebarToggle = signal(false);
+  sidebarToggle = signal(true);
   page = signal('ecommerce');
 }
