@@ -289,44 +289,6 @@
 	}
 }
 
-/* .sidebar:hover {
-	width: 290px;
-}
-.sidebar:hover .logo {
-	display: block;
-}
-.sidebar:hover .logo-icon {
-	display: none;
-}
-.sidebar:hover .sidebar-header {
-	justify-content: space-between;
-}
-.sidebar:hover .menu-group-title {
-	display: block;
-}
-.sidebar:hover .menu-group-icon {
-	display: none;
-}
-
-.sidebar:hover .menu-item-text {
-	display: inline;
-}
-
-.sidebar:hover .menu-item-arrow {
-	display: block;
-}
-
-.sidebar:hover .menu-dropdown {
-	display: flex;
-} */
-
-.tableCheckbox:checked ~ span span {
-	@apply opacity-100;
-}
-.tableCheckbox:checked ~ span {
-	@apply border-brand-500 bg-brand-500;
-}
-
 /* third-party libraries CSS */
 .apexcharts-legend-text {
 	@apply text-gray-700! dark:text-gray-400!;
@@ -462,12 +424,6 @@ span.flatpickr-weekday,
 .flatpickr-months .flatpickr-month {
 	@apply dark:fill-white! dark:text-white!;
 }
-.flatpickr-day.inRange {
-	box-shadow:
-		-5px 0 0 #f9fafb,
-		5px 0 0 #f9fafb !important;
-	@apply dark:shadow-datepicker!;
-}
 .flatpickr-day.inRange,
 .flatpickr-day.prevMonthDay.inRange,
 .flatpickr-day.nextMonthDay.inRange,
@@ -521,11 +477,6 @@ span.flatpickr-weekday,
 .flatpickr-months .flatpickr-next-month {
 	@apply hover:fill-none!;
 }
-.flatpickr-months .flatpickr-prev-month:hover svg,
-.flatpickr-months .flatpickr-next-month:hover svg {
-	fill: none !important;
-}
-
 .flatpickr-calendar.static {
 	@apply right-0;
 }
@@ -670,11 +621,6 @@ span.flatpickr-weekday,
 	-webkit-appearance: none;
 }
 
-.swiper-button-prev svg,
-.swiper-button-next svg {
-	@apply h-auto! w-auto!;
-}
-
 .carouselTwo .swiper-button-next:after,
 .carouselTwo .swiper-button-prev:after,
 .carouselFour .swiper-button-next:after,
@@ -717,10 +663,6 @@ span.flatpickr-weekday,
 .carouselThree .swiper-pagination-bullet-active,
 .carouselFour .swiper-pagination-bullet-active {
 	@apply w-6.5 rounded-xl;
-}
-
-.form-check-input:checked ~ span {
-	@apply border-brand-500 dark:border-brand-500 border-[6px];
 }
 
 .taskCheckbox:checked ~ .box span {
