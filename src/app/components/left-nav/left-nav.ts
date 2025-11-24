@@ -10,5 +10,4 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class LeftNav {
   sidebarToggle = signal(false);
-  page = signal('ecommerce');
 }
