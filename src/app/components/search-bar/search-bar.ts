@@ -19,12 +19,6 @@ import { Component } from '@angular/core';
           placeholder="Search"
           required
         />
-        <button
-          type="button"
-          class="absolute end-1.5 bottom-1.5 text-white bg-blue-900 bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded text-xs px-3 py-1.5 focus:outline-none"
-        >
-          Search
-        </button>
       </div>
     </form>
   `,

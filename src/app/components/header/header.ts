@@ -1,11 +1,11 @@
-import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { SearchBar } from '../search-bar/search-bar';
 import { ToggleMenu } from '../search-bar/toggle-menu';
+import { AskAi } from '../search-bar/ask-ai-button';
 
 @Component({
   selector: 'bee-header',
-  imports: [NgClass, SearchBar, ToggleMenu],
+  imports: [SearchBar, ToggleMenu, AskAi],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: 'header.html',
 })

@@ -4,7 +4,7 @@ import { MatTableModule } from '@angular/material/table';
 export interface PeriodicElement {
   name: string;
   position: number;
-  empId: string;
+  createdAt: string;
   invoiceId: string;
   assignedTo: string;
   status: string;
@@ -14,7 +14,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 1,
     name: 'Printer not working',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Andy white',
     status: 'In Progress',
@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 2,
     name: 'Unable to login to my email',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Ella Lockwood',
     status: 'On Hold',
@@ -30,7 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 3,
     name: 'Need a hand with onboarding',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Brian Paul',
     status: 'In Progress',
@@ -38,7 +38,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 4,
     name: 'Error in my office package',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Sarah Carl',
     status: 'In Progress',
@@ -46,7 +46,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 5,
     name: 'I can not login',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Sallajah Perumal',
     status: 'In Progress',
@@ -54,7 +54,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 6,
     name: 'How to I get access to my files',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Brian Bell',
     status: 'New',
@@ -62,7 +62,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 7,
     name: 'I need 2FA setup',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Mandy Clark',
     status: 'New',
@@ -70,7 +70,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 8,
     name: 'Password change request',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Chandan Ghosh',
     status: 'New',
@@ -78,7 +78,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 9,
     name: 'Mac Book not loading',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Eid Zohura',
     status: 'New',
@@ -86,7 +86,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 10,
     name: 'Issue with my github access',
-    empId: '234-FDE-923',
+    createdAt: new Date().toDateString(),
     invoiceId: 'BHT-XD3FDE-FR94TRO-23',
     assignedTo: 'Mira Carrie',
     status: 'New',
@@ -100,6 +100,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: 'table.html',
 })
 export class DashboardTable {
-  displayedColumns: string[] = ['position', 'name', 'empId', 'invoiceId', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'createdAt', 'invoiceId', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }

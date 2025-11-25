@@ -26,7 +26,9 @@ import { NgClass } from '@angular/common';
           <h4 class="mt-2 text-title-xl font-bold text-gray-800 dark:text-white/90">
             {{ values().value }}
           </h4>
-          <span class="text-xl text-gray-500 dark:text-gray-400">{{ values().title }}</span>
+          <span class="text-xl text-gray-500 dark:text-gray-400 md:text-base">{{
+            values().title
+          }}</span>
         </div>
       </div>
       <div class="flex h-12 w-12 items-center justify-center">
