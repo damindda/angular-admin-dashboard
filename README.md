@@ -1,13 +1,23 @@
-# AngularAdminDashboard
+# Angular Admin Dashboard - Free
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+<a href="https://angular-admin-dashboard-omega.vercel.app/dashboard">
+<img alt="Angular Admin Dashboard" width="100%" src="./docs/admin-dashboard.png">
+</a>
+
+Free Angular, Tailwind, Material UI web template. This uses later Angular 21, Signal Features.
+
+Do you fancy new feature, let me know.
+
+- Feel free to share your ideas through [Pull Requests](https://github.com/damindda/angular-admin-dashboard/pulls).
+
+- Did you find any issues, Let me know it here [GitHub Issues](https://github.com/damindda/angular-admin-dashboard/issues).
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
