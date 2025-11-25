@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'bee-template-message',
   template: `
-    <div class="shadow-lg border w-full p-12 text-center">
+    <div class="shadow-lg border w-full lg:p-12 md:p-8 text-center">
       <h1 class="mb-4 font-bold text-heading text-center">
         <p
-          class="text-transparent bg-clip-text bg-linear-to-r to-emerald-600 from-sky-400 text-2xl md:text-3xl lg:text-4xl"
+          class="text-transparent bg-clip-text bg-linear-to-r to-emerald-600 from-sky-400 text-2xl sm:text-xl md:text-2xl lg:text-3xl"
         >
           Angular
         </p>

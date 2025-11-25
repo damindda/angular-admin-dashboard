@@ -6,7 +6,7 @@
     [ngClass]="sidebarToggle() ? 'justify-center' : 'justify-between'"
     class="flex items-center gap-2 pt-8 sidebar-header pb-7"
   >
-    <a routerLink="index.html">
+    <a routerLink="/">
       <span class="logo" [ngClass]="sidebarToggle() ? 'hidden' : ''">
         <img class="dark:hidden" src="images/logo.svg" alt="Logo" />
       </span>
@@ -32,7 +32,7 @@
           </a>
         </li>
         <li>
-          <a routerLink="/" class="menu-item">
+          <a routerLink="/customer-info" class="menu-item">
             <img src="images/svgs/left-nav/customer-management.svg" alt="" class="w-8 h-8" />
             <span class="menu-item-text uppercase" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
               Customer Info
@@ -40,7 +40,7 @@
           </a>
         </li>
         <li>
-          <a routerLink="profile.html" class="menu-item">
+          <a routerLink="/all-tickets" class="menu-item">
             <img src="images/svgs/left-nav/ticket.svg" alt="" class="w-8 h-8" />
 
             <span class="menu-item-text uppercase" [ngClass]="sidebarToggle() ? 'lg:hidden' : ''">
