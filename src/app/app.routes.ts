@@ -2,7 +2,7 @@ import type { Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { Users } from './components/users';
 import { DashboardPage } from './pages/dashboard';
-import { PageNotFound } from './components/page-not-found/not-found.component';
+import { PageNotFound } from './pages/not-found.component';
 
 export const routes: Routes = [
   {
