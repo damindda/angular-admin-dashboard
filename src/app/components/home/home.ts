@@ -4,7 +4,7 @@ import { DashboardTable } from '../table/table';
 import { Title } from '../title';
 import { WelcomeBanner } from '../welcome-banner/welcome-banner';
 import { CurrentUtilization } from '../current-utilization/current-utilization';
-import { TemplateMessage } from '../template-message/template-message';
+import { TemplateMessage } from '../template-message';
 import { Chat } from '../chat/chat';
 @Component({
   selector: 'bee-home',
